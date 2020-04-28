@@ -1,0 +1,48 @@
+       *
+     * *
+   * * *
+ * * * *
+ // nst = no of star
+ // nsp = no of space
+ // isp = inner space
+ // ist = inner star
+ =========================================JAVA--PROGRAM=================================================================================
+ 
+ import java.util.*;
+            
+            public class Main{
+            
+            public static void main(String[] args) {
+                Scanner scn = new Scanner(System.in);
+           int nRow= scn.nextInt();
+                 int nst=1;
+                 int nsp=(nRow-1);
+                 int iRow=0;
+                 while(iRow<nRow)
+                 {
+                     //print spaces
+                     int isp=1;
+                     while(isp<=nsp)
+                     {
+                         System.out.print("	");
+                         isp++;
+                     }
+                     
+                     //print stars
+                     int ist=1;
+                     while(ist<=nst){
+                         System.out.print("*	");
+                         ist++;
+                     }
+                     
+                     //print new lines
+                     System.out.println();
+                     
+                     //update for next lines
+                     nst++;
+                     nsp--;
+                     iRow++;
+                 }
+            
+             }
+            }
